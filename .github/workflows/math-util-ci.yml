@@ -25,8 +25,7 @@ jobs: # Những công việc dev làm thường ngày: lấy code, build, chạy
         uses: actions/setup-java@v4 # Khai báo cần dùng JDK để build
         with:
           distribution: temurin
-          java-version: 18 # Khai báo sử dụng phiên bản JDK 1.8 để build
-          cache: ant # giúp lưu cache build để lần sau CI nhanh hơn
+          java-version: 18 # Khai báo sử dụng phiên bản JDK 18 để build
           
       - name: Build project with Ant
         run: ant -noinput -buildfile build.xml # Quá trình build sẽ cần đến file cấu hình build.xml, build-impl.xml
