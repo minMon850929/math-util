@@ -28,17 +28,17 @@ public class MathUtil {
 //            product *= i;
 //        return product;
 //    }
-    
-     public static long getFactorial(int n) {
+    //đệ quy
+    public static long getFactorial(int n) {
         if (n < 0 || n > 20) {
             throw new IllegalArgumentException("Invalid argumnent. N must be from 0 to 20");
         }
         if (n == 0 || n == 1)
             return 1; //kết thúc cuộc chơi sớm nếu nhân những đầu vào đặc biệt
+                      //điều kiện dừng của đệ quy
         return n * getFactorial(n-1); //công thức đệ quy
        
     }
-    
     //Học đệ quy trong vòng 30s - RECURSION
     //Tính giùm tui 6!
     //n! = 1.2.3.4.5.6....n
@@ -47,4 +47,5 @@ public class MathUtil {
     //..
     //2! = 2 x 1 //điểm dừng
     //1! = 1, 0! = 1
+    //n! = n * (n - 1)! công thức lặp lại chính mình với quy mô nhỏ hơn
     }
