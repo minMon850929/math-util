@@ -22,6 +22,8 @@ public class Main {
         long actual = MathUtil.getFactorial(5);
         System.out.println("5! = " + expected + " expected");
         System.out.println("5! = " + actual + " actual");
+        System.out.println("6! = 720?" + MathUtil.getFactorial(6)); //modify by someone before
+        
     }   
     
 }
